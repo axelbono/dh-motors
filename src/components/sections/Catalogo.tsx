@@ -35,7 +35,7 @@ export default function Catalogo() {
           <SectionHeader
             label="Un poco de nuestro catálogo"
             title="Los más destacados"
-            /*subtitle="TU MARCA FAVORITA EN UN SOLO LUGAR"*/
+            subtitle="Buscas un auto en específico? Contáctanos y te ayudamos a encontrarlo."
             subtitleVariant="label"
           />
         </div>
