@@ -22,7 +22,7 @@ export default function CarCard({ auto, onConsultar }: CarCardProps) {
           <CarIllustration className="w-4/5 transition-transform duration-300 group-hover:scale-105" brand={auto.marca} />
         )}
         <div className="absolute top-3 left-3">
-          <Badge label={auto.tipo === 'nuevo' ? 'Nuevo' : 'Seminuevo'} />
+          <Badge label={auto.tipo === 'nuevo' ? 'Lo más reciente' : 'Lo más reciente'} />
         </div>
       </div>
 
