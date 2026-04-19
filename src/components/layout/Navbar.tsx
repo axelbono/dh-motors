@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import LogoDHMotors from '../../assets/images/logos/LogoDHMotors-Sin Fondo.png' // Import the new logo
+import LogoDHMotors from '../../assets/images/logos/LogoDHMotors-SinFondo.png' // Import the new logo
 
 const navLinks = [
   { label: 'Catálogo', href: '#catalogo' },

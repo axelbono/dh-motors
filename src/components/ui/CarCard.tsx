@@ -7,10 +7,6 @@ interface CarCardProps {
   onConsultar: (auto: Auto) => void
 }
 
-function formatMXN(n: number): string {
-  return '$' + n.toLocaleString('es-MX')
-}
-
 export default function CarCard({ auto, onConsultar }: CarCardProps) {
   return (
     <article className="bg-black-2 border border-border overflow-hidden transition-all duration-200 hover:border-orange hover:-translate-y-1 cursor-pointer group">
@@ -48,22 +44,12 @@ export default function CarCard({ auto, onConsultar }: CarCardProps) {
             <span className="text-orange">◇</span> {auto.año}
           </span>
           <span className="font-body text-[0.7rem] text-muted flex items-center gap-1">
-            <span className="text-orange">◇</span>{' '}
-            {auto.tipo === 'nuevo' ? '0 km' : `${auto.km.toLocaleString()} km`}
-          </span>
-          <span className="font-body text-[0.7rem] text-muted flex items-center gap-1">
             <span className="text-orange">◇</span> {auto.transmision}
           </span>
         </div>
 
         {/* Footer */}
-        <div className="flex items-center justify-between border-t border-border pt-4">
-          <div>
-            <p className="font-display text-xl tracking-wide leading-none">
-              {formatMXN(auto.precio)}
-            </p>
-            <p className="font-body text-[0.65rem] text-muted mt-0.5">MXN</p>
-          </div>
+        <div className="flex items-center justify-end border-t border-border pt-4">
           <button
             onClick={() => onConsultar(auto)}
             className="font-body text-[0.7rem] uppercase tracking-widest text-orange border border-orange px-3 py-2 transition-all duration-200 hover:bg-orange hover:text-white active:scale-95"
