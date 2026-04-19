@@ -34,7 +34,7 @@ export default function Catalogo() {
         <div>
           <SectionHeader
             label="Un poco de nuestro catálogo"
-            title="Catálogo"
+            title="Los más destacados"
             /*subtitle="TU MARCA FAVORITA EN UN SOLO LUGAR"*/
             subtitleVariant="label"
           />
