@@ -3,7 +3,7 @@ import { marcas } from '../../data/autos'
 export default function Marcas() {
   return (
     <div className="border-t border-b border-border px-[5vw] py-8">
-      <p className="font-body text-[0.65rem] uppercase tracking-widest text-muted text-center mb-5">
+      <p className="font-body text-[0.65rem] uppercase tracking-widest text-center mb-5">
         Marcas que puedes encontrar en DH Motors
       </p>
       <ul className="flex flex-wrap justify-center gap-8 md:gap-12 list-none">
